@@ -16,7 +16,7 @@ static LATIN_QUOTES: [&str; 10] = [
 pub fn random_quote() -> &'static str {
     let mut num = rand::rng();
 
-    let random = num.random_range(0..9);
+    let random = num.random_range(0..10);
 
     LATIN_QUOTES[random]
 }
